@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroProfessor"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matrícula do Professor:"
+        android:textSize="15dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edMatriculaProfessor"
+        android:inputType="number"
+        android:hint="Digite a matrícula do professor"
+        android:layout_marginBottom="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Professor:"
+        android:textSize="15dp"
+        android:layout_marginBottom="10sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edNomeProfessor"
+        android:hint="Digite o nome do professor"
+        android:layout_marginBottom="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data de Nascimento do Professor:"
+        android:textSize="15dp"
+        android:layout_marginBottom="10sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edDataNascProfessor"
+        android:hint="Digite a data de nascimento do professor"
+        android:layout_marginBottom="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPF do Professor:"
+        android:textSize="15dp"
+        android:layout_marginBottom="10sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edCpfProfessor"
+        android:hint="Digite o cpf do professor"
+        android:layout_marginBottom="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data de Admissão:"
+        android:textSize="15dp"
+        android:layout_marginBottom="10sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edDataAdmissao"
+        android:hint="Digite a data de Admissão"
+        android:layout_marginBottom="10sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:textSize="20sp"
+        android:id="@+id/btSalvarP"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:backgroundTint="@color/green"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:id="@+id/tvListaProfessor"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
